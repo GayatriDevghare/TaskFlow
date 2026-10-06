@@ -1,0 +1,89 @@
+
+/* Global layout */
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  color: #1e293b;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Prevent form controls from using inconsistent fonts */
+body,
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* Global dark theme */
+html.dark-mode,
+body.dark-mode {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Ensure the React root fills the screen */
+html.dark-mode #root,
+body.dark-mode #root {
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Common text elements */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode label,
+body.dark-mode span {
+  color: inherit;
+}
+
+/* Form controls */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  border-color: #475569;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* Links */
+body.dark-mode a {
+  color: #93c5fd;
+}
+
+/* Buttons */
+body.dark-mode button {
+  color: inherit;
+}
+
+/* Theme transitions */
+body,
+#root,
+.settings-card {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
